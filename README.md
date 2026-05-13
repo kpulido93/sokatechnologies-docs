@@ -1,58 +1,87 @@
 # SokaTechnologies Docs
 
-Repositorio central de documentacion interna de SokaTechnologies para vender, entregar y mantener proyectos B2B con criterios consistentes.
+Repositorio principal de documentacion estrategica, comercial, operativa y tecnica de SokaTechnologies.
 
-## Objetivo
+## Proposito
 
-Mantener en un solo lugar los procesos, estandares, plantillas y reglas operativas que el equipo necesita para:
+Centralizar informacion practica para vender, entregar y mantener proyectos B2B con criterios consistentes, reutilizables y seguros.
 
-- vender con propuestas claras y controladas;
-- ejecutar proyectos con menos ambiguedad;
-- operar soporte y mantenimiento con expectativas explicitas;
-- documentar decisiones repetibles sin depender de memoria informal.
+## Que contiene
 
-## Como usar este repositorio
+- Contexto de empresa, servicios y posicionamiento.
+- Procesos comerciales, de entrega, soporte y mantenimiento.
+- Estandares tecnicos, stack recomendado y criterios de seguridad.
+- Plantillas para trabajar con Codex, ChatGPT y documentacion interna.
+- Documentacion de marketing, web publica y productos propios.
 
-1. Busca primero si ya existe un documento o plantilla util.
-2. Actualiza el documento mas cercano en lugar de duplicar contenido.
-3. Mantén cada archivo breve, accionable y orientado a operacion real.
-4. Usa checklists, tablas y plantillas antes que texto narrativo largo.
-5. Elimina o anonimiza cualquier dato sensible antes de guardar cambios.
+## Estructura oficial
 
-## Reglas no negociables
+```text
+docs/
+├── empresa/
+├── procesos/
+├── tecnico/
+├── codex/
+├── marketing/
+└── productos/
+```
 
-- No incluir secretos, credenciales, tokens ni archivos de entorno.
-- No incluir datos confidenciales de clientes ni mezclar informacion entre cuentas.
-- Usar nombres genericos en ejemplos, notas y plantillas.
-- Recomendar revision legal, fiscal o contable cuando el tema lo requiera.
-- Mantener la documentacion alineada con la forma real de trabajar del equipo.
-
-## Estructura
-
-| Ruta | Proposito |
+| Carpeta | Descripcion |
 | --- | --- |
-| `docs/company` | Definicion de empresa, posicionamiento y servicios. |
-| `docs/sales` | Discovery, propuestas y criterios comerciales. |
-| `docs/delivery` | Kickoff, requisitos, control de cambios y cierre. |
-| `docs/technical` | Estandares de ingenieria, seguridad y despliegue. |
-| `docs/operations` | Soporte, mantenimiento e incidentes. |
-| `docs/templates` | Plantillas reutilizables para trabajo recurrente. |
-| `scripts` | Scripts auxiliares futuros para automatizacion documental. |
-| `tests` | Validaciones o checks automatizados futuros del repositorio. |
+| `docs/empresa/` | Contexto de SokaTechnologies, servicios, foco de negocio y criterios base. |
+| `docs/procesos/` | Procesos comerciales, entrega de proyectos y operacion repetible. |
+| `docs/tecnico/` | Stack tecnico, seguridad, arquitectura y estandares de implementacion. |
+| `docs/codex/` | Instrucciones, plantillas y reglas para usar Codex en este repo. |
+| `docs/marketing/` | Web, mensajes comerciales, contenido publico y materiales de marketing. |
+| `docs/productos/` | Documentacion de productos propios, alcance, validacion y propuestas. |
 
-## Flujo recomendado para editar
+## Documentos principales
 
-1. Define el resultado operativo que el documento debe habilitar.
-2. Revisa [AGENTS.md](./AGENTS.md) antes de tocar contenido.
-3. Estructura el cambio con objetivo, pasos, checklist o plantilla.
-4. Verifica que no haya informacion sensible.
-5. Actualiza enlaces relacionados si el cambio afecta otros documentos.
+- [`00_Contexto_Empresa.md`](./docs/empresa/00_Contexto_Empresa.md)
+- [`01_Servicios.md`](./docs/empresa/01_Servicios.md)
+- [`03_Proceso_Comercial.md`](./docs/procesos/03_Proceso_Comercial.md)
+- [`04_Proceso_Entrega.md`](./docs/procesos/04_Proceso_Entrega.md)
+- [`05_Stack_Tecnico.md`](./docs/tecnico/05_Stack_Tecnico.md)
+- [`06_Estandares_Seguridad.md`](./docs/tecnico/06_Estandares_Seguridad.md)
+- [`10_Codex_AGENTS_Template.md`](./docs/codex/10_Codex_AGENTS_Template.md)
+- [`Web_SokaTechnologies_WordPress.md`](./docs/marketing/Web_SokaTechnologies_WordPress.md)
 
-## Documentos iniciales
+## Reglas de confidencialidad
 
-- Empresa y servicios: [overview](./docs/company/overview.md), [services](./docs/company/services.md)
-- Ventas: [discovery](./docs/sales/discovery.md), [proposal-template](./docs/sales/proposal-template.md), [pricing-principles](./docs/sales/pricing-principles.md)
-- Delivery: [project-kickoff](./docs/delivery/project-kickoff.md), [requirements-template](./docs/delivery/requirements-template.md), [change-control](./docs/delivery/change-control.md), [handoff-checklist](./docs/delivery/handoff-checklist.md)
-- Tecnico: [engineering-standards](./docs/technical/engineering-standards.md), [security-standards](./docs/technical/security-standards.md), [deployment-standards](./docs/technical/deployment-standards.md), [codex-workflow](./docs/technical/codex-workflow.md)
-- Operaciones: [support-process](./docs/operations/support-process.md), [maintenance-plans](./docs/operations/maintenance-plans.md), [incident-response](./docs/operations/incident-response.md)
-- Plantillas: [meeting-notes](./docs/templates/meeting-notes.md), [client-brief](./docs/templates/client-brief.md), [case-study-template](./docs/templates/case-study-template.md)
+- No incluir secretos, credenciales, tokens ni claves de API.
+- No incluir datos reales o confidenciales de clientes.
+- No mezclar informacion entre clientes, proyectos o cuentas.
+- Usar nombres genericos en ejemplos, plantillas y casos publicos.
+- Validar con asesoria legal, fiscal o contable cuando el documento trate esos temas.
+
+## Uso con ChatGPT
+
+- Compartir solo el fragmento minimo necesario.
+- Anonimizar nombres de clientes, contactos, dominios, presupuestos y datos internos sensibles.
+- Pedir respuestas accionables: checklists, tablas, pasos o plantillas.
+- Revisar cualquier salida antes de incorporarla al repo.
+
+## Uso con Codex
+
+- Revisar y respetar [`AGENTS.md`](./AGENTS.md) antes de modificar documentos.
+- Antes de editar, indicar documento, objetivo, estructura propuesta y riesgos de confidencialidad.
+- Preferir actualizar documentos existentes antes de crear variantes nuevas.
+- Mantener cambios cortos, claros y utiles para operacion real.
+- Verificar que no se agreguen secretos ni informacion sensible.
+
+## Que no debe subirse
+
+- Secretos, credenciales, tokens, claves privadas o archivos `.env`.
+- Datos reales de clientes, usuarios, contratos o conversaciones privadas.
+- Backups, dumps de base de datos o exports internos.
+- Capturas, logs o reportes con informacion sensible.
+- Archivos generados que no aporten valor documental.
+
+## Flujo para actualizar documentos
+
+1. Confirmar el objetivo operativo del cambio.
+2. Buscar si ya existe un documento relacionado.
+3. Actualizar el archivo mas cercano y mantener la estructura accionable.
+4. Usar listas, tablas, pasos o plantillas cuando aplique.
+5. Revisar enlaces y coherencia con otros documentos.
+6. Verificar que no haya informacion sensible antes de guardar.

@@ -1,18 +1,16 @@
-# 00_Contexto_Empresa.md
-
 # Contexto Base de SokaTechnologies
 
-**Documento:** 00_Contexto_Empresa.md  
+**Documento:** `docs/empresa/00_Contexto_Empresa.md`  
 **Empresa:** SokaTechnologies  
 **Uso:** Referencia estratégica, operativa y técnica para el proyecto de ChatGPT y la documentación interna de la empresa.  
-**Versión:** 1.1  
+**Versión:** 1.2  
 **Última actualización:** 2026-05-13  
 
 ---
 
 ## 1. Resumen ejecutivo de SokaTechnologies
 
-SokaTechnologies es una empresa B2B en etapa inicial enfocada en el desarrollo de software a medida, sitios web corporativos, automatizaciones de flujos de trabajo, integraciones, dashboards, soporte técnico e infraestructura cloud/on-prem.
+SokaTechnologies es una empresa B2B en etapa inicial enfocada en desarrollo de software a medida, sitios web corporativos, automatizaciones de flujos de trabajo, integraciones, dashboards, soporte técnico e infraestructura cloud/on-prem.
 
 La empresa busca resolver problemas operativos reales de pequeñas y medianas empresas mediante soluciones tecnológicas simples, seguras, mantenibles y orientadas a resultados. El objetivo no es vender únicamente programación, sino ayudar a los clientes a reducir trabajo manual, disminuir errores, mejorar trazabilidad, aumentar control operativo, proteger información y escalar procesos internos.
 
@@ -181,21 +179,36 @@ Ejemplos:
 - Mejoras evolutivas.
 - Documentación y capacitación.
 
+### 5.7 Web pública inicial de SokaTechnologies
+
+La web pública inicial de SokaTechnologies será construida en **WordPress usando cPanel**.
+
+Objetivo de la web pública:
+
+- Presentar los servicios principales.
+- Mostrar portafolio y productos propios.
+- Publicar casos de éxito anonimizados.
+- Crear un blog inicial con contenido técnico/comercial.
+- Recibir prospectos mediante formulario de contacto.
+- Servir como activo comercial simple, mantenible y rápido de lanzar.
+
+La documentación y lineamientos de esta web vivirán en:
+
+```md
+docs/marketing/Web_SokaTechnologies_WordPress.md
+```
+
 ---
 
 ## 6. Productos y aplicaciones propias
 
-SokaTechnologies cuenta con productos propios en desarrollo que deben tratarse como activos estratégicos. Cada producto debe tener alcance, cliente ideal, estado real, riesgos, precio, demo y plan comercial separado.
-
-La prioridad de productos queda así:
+SokaTechnologies cuenta con productos propios en desarrollo que deben tratarse como activos estratégicos. Este documento solo mantiene el contexto general; el alcance completo de cada producto debe vivir en documentos separados.
 
 | Prioridad | Producto | Estado estratégico |
 |---|---|---|
 | 1 | Portik | Producto principal para validación comercial inmediata |
 | 2 | AutoInventario | Producto técnico con potencial B2B, pendiente de remediación antes de venta |
-| 3 | Auto Whatsapp | Herramienta operativa controlada, con límites de consentimiento y cumplimiento |
-
----
+| 3 | AutoWhatsApp | Herramienta operativa controlada, con límites de consentimiento y cumplimiento |
 
 ### 6.1 Portik
 
@@ -203,7 +216,7 @@ Portik es una plataforma web orientada a la operación de portería, control de 
 
 Portik debe ser la prioridad comercial inmediata de SokaTechnologies porque tiene un mercado identificable, dolor operativo claro y potencial de ingreso recurrente mensual por conjunto o por administradora.
 
-Objetivos comerciales iniciales:
+Objetivos iniciales:
 
 - Preparar demo comercial con datos ficticios.
 - Validar el producto con administradores reales.
@@ -212,41 +225,6 @@ Objetivos comerciales iniciales:
 - Definir modelo de precio por conjunto, unidad o plan mensual.
 - Crear caso de éxito anonimizado.
 - Establecer soporte y mantenimiento recurrente.
-
-Cliente ideal:
-
-- Administradores de condominios.
-- Administradores de conjuntos residenciales.
-- Empresas administradoras de propiedades.
-- Juntas directivas.
-- Conjuntos con portería física.
-- Conjuntos con control manual de visitantes, vehículos, parqueaderos y reservas.
-
-Módulos prioritarios del MVP:
-
-- Gestión de conjuntos, predios, personas y vehículos.
-- Búsqueda de portería por placa o predio.
-- Ficha operativa para portería.
-- Registro de ingresos y salidas.
-- Parqueaderos de visitantes.
-- Novedades y alertas.
-- Reservas de zonas comunes.
-- Bitácora.
-- Reportes simples.
-- Autogestión básica del residente.
-
-Fuera del MVP inicial:
-
-- App móvil nativa.
-- Pagos en línea.
-- Hardware.
-- OCR.
-- Reconocimiento automático de placas.
-- WhatsApp automático.
-- Integraciones complejas.
-- Reportes analíticos avanzados.
-
----
 
 ### 6.2 AutoInventario
 
@@ -260,54 +238,11 @@ Estado estratégico:
 - No debe venderse como producto listo hasta completar una fase de estabilización técnica y seguridad.
 - Debe orientarse a empresas con soporte IT, auditoría, infraestructura interna o uso de ManageEngine.
 
-Objetivos iniciales:
+### 6.3 AutoWhatsApp
 
-- Restaurar y estabilizar build principal.
-- Corregir estructura del agente.
-- Eliminar y rotar secretos expuestos o versionados.
-- Migrar componentes fuera de soporte.
-- Rehabilitar autenticación del Webhook.
-- Crear pruebas reales.
-- Documentar instalación, despliegue y operación.
-- Preparar demo técnica controlada.
-- Definir paquetes Starter, Pro y Enterprise.
+AutoWhatsApp es una herramienta Windows para programar envíos por WhatsApp Web desde Excel, con soporte para preparación manual de sesiones, múltiples líneas, fallback y conversión opcional de texto a audio.
 
-Cliente ideal:
-
-- Empresas con parque de equipos Windows.
-- Áreas de soporte técnico.
-- Empresas con ManageEngine ServiceDesk Plus.
-- Proveedores de soporte IT gestionado.
-- Empresas que requieren auditoría de hardware, software, licencias, usuarios y red.
-
-Fuera del alcance inicial:
-
-- Inventario comercial de productos.
-- POS.
-- Facturación.
-- Compras.
-- Ventas.
-- Código de barras.
-- Control de almacenes.
-- App móvil.
-
----
-
-### 6.3 Auto Whatsapp
-
-Auto Whatsapp es una herramienta Windows para programar envíos por WhatsApp Web desde Excel, con soporte para preparación manual de sesiones, múltiples líneas, fallback y conversión opcional de texto a audio.
-
-Auto Whatsapp debe manejarse con límites estrictos de consentimiento, cumplimiento y uso aceptable. No debe venderse como herramienta de spam, campañas masivas, scraping, evasión de límites, cobranzas agresivas, juegos de azar o loterías.
-
-Objetivos iniciales:
-
-- Definir política de uso aceptable.
-- Agregar controles de consentimiento.
-- Agregar lista de opt-out o bloqueados.
-- Agregar límites de envíos por corrida.
-- Agregar reporte final de enviados, fallidos y omitidos.
-- Documentar riesgos y restricciones.
-- Evaluar si será producto comercial, herramienta interna o complemento operativo.
+AutoWhatsApp debe manejarse con límites estrictos de consentimiento, cumplimiento y uso aceptable. No debe venderse como herramienta de spam, campañas masivas, scraping, evasión de límites, cobranzas agresivas, juegos de azar o loterías.
 
 Usos permitidos:
 
@@ -386,7 +321,7 @@ Los mercados iniciales de SokaTechnologies deben priorizar empresas B2B pequeña
 | Pymes sin equipo técnico | Falta de soporte, backups, monitoreo y seguridad | Infraestructura y soporte mensual |
 | Empresas de cobranzas | Gestión de casos, trazabilidad, reportes, integración de datos | Software interno y dashboards, con cuidado legal/compliance |
 | Empresas reguladas o con auditoría | Trazabilidad, control, reportes, cumplimiento | Sistemas internos, seguridad, auditoría e infraestructura |
-| Empresas con comunicaciones operativas consentidas | Recordatorios y notificaciones permitidas | Auto Whatsapp solo bajo consentimiento y uso controlado |
+| Empresas con comunicaciones operativas consentidas | Recordatorios y notificaciones permitidas | AutoWhatsApp solo bajo consentimiento y uso controlado |
 
 Segmentos que no deben priorizarse ahora:
 
@@ -424,7 +359,7 @@ SokaTechnologies no debe vender solamente código. Debe vender resultados de neg
 |---|---|
 | Portik | Ordenar la operación de portería, visitantes, vehículos, reservas y trazabilidad en conjuntos residenciales |
 | AutoInventario | Automatizar inventario de activos Windows y sincronización con herramientas ITSM |
-| Auto Whatsapp | Apoyar comunicaciones operativas consentidas de bajo volumen desde Excel y WhatsApp Web |
+| AutoWhatsApp | Apoyar comunicaciones operativas consentidas de bajo volumen desde Excel y WhatsApp Web |
 
 ---
 
@@ -470,13 +405,13 @@ Durante los próximos 90 días, SokaTechnologies debe enfocarse en consolidar ba
 | Validar Portik comercialmente | 3 conversaciones con administradores y 1 piloto pagado o semi-pagado |
 | Preparar demo comercial de Portik | Ambiente estable con datos ficticios y guion de demo |
 | Estabilizar AutoInventario | Build, secretos, autenticación, seguridad y documentación corregidos |
-| Definir futuro de Auto Whatsapp | Decidir si será producto, herramienta interna o complemento controlado |
+| Definir futuro de AutoWhatsApp | Decidir si será producto, herramienta interna o complemento controlado |
 | Definir ofertas comerciales claras | 3 a 5 servicios empaquetados y vendibles |
 | Crear portafolio inicial | Casos de éxito anonimizados, demos y páginas de presentación |
 | Reducir dependencia de dos clientes | Prospectar nuevos clientes semanalmente |
 | Crear procesos internos | Propuesta, contrato, onboarding, entrega, soporte y cierre |
 | Generar ingresos recurrentes | Ofrecer mantenimiento mensual en cada proyecto |
-| Mejorar presencia digital | Sitio web o landing comercial de SokaTechnologies |
+| Mejorar presencia digital | Web pública en WordPress para SokaTechnologies, con páginas de servicios, portafolio, casos de éxito anonimizados, blog inicial y formulario de contacto |
 | Organizar documentación | Crear documentos base para estrategia, ventas, operación y técnica |
 | Usar Codex con control | Definir tareas pequeñas, revisar diffs y evitar cambios inseguros |
 
@@ -489,12 +424,13 @@ Durante los próximos 90 días, SokaTechnologies debe enfocarse en consolidar ba
 - Definir pitch de Portik.
 - Preparar propuesta de piloto de Portik.
 - Abrir backlog de remediación crítica de AutoInventario.
-- Crear política de uso aceptable para Auto Whatsapp.
+- Crear política de uso aceptable para AutoWhatsApp.
 - Crear plantilla de propuesta comercial.
 - Crear plantilla de contrato o acuerdo de servicios para revisión legal.
 - Convertir al menos un cliente o proyecto en soporte mensual.
 - Documentar el proceso básico de entrega de proyectos.
-- Crear repositorios organizados con README, `.env.example` y checklist de despliegue.
+- Publicar la web inicial de SokaTechnologies en WordPress/cPanel.
+- Crear repositorios organizados con README, `.env.example` y checklist de despliegue cuando aplique.
 
 ---
 
@@ -506,7 +442,8 @@ Durante los próximos 90 días, SokaTechnologies debe enfocarse en consolidar ba
 | Vender solo horas técnicas | Bajo margen y poca escalabilidad | Vender resultados, paquetes y mantenimiento |
 | Priorizar producto equivocado | Pérdida de tiempo comercial | Priorizar Portik para validación inmediata |
 | Vender AutoInventario antes de estabilizarlo | Riesgo técnico y reputacional | Corregir build, secretos, autenticación y pruebas antes de venta |
-| Usar Auto Whatsapp de forma riesgosa | Riesgo legal, reputacional y de plataforma | Limitar a consentimiento, opt-out y uso operativo permitido |
+| Usar AutoWhatsApp de forma riesgosa | Riesgo legal, reputacional y de plataforma | Limitar a consentimiento, opt-out y uso operativo permitido |
+| Convertir la web pública en un proyecto técnico innecesariamente complejo | Retraso comercial | Construir la primera versión en WordPress usando cPanel |
 | Falta de procesos comerciales | Dificultad para cerrar ventas | Crear guion de diagnóstico y plantilla de propuesta |
 | Alcance mal definido | Retrabajo y pérdida de margen | Usar alcance escrito, entregables y control de cambios |
 | No cobrar soporte | Ingreso inestable | Incluir mantenimiento mensual en cada propuesta |
@@ -638,6 +575,17 @@ Después del despliegue se debe entregar:
 - Plan de soporte.
 - Lista de mejoras futuras.
 
+### 14.5 Reglas técnicas para la web pública
+
+La web pública inicial de SokaTechnologies será WordPress en cPanel. Por tanto:
+
+- No se debe complicar la primera versión con un frontend custom si no es necesario.
+- No se debe guardar una instalación completa de WordPress en Git.
+- El repositorio `sokatechnologies-website` debe contener documentación, assets, tema hijo, snippets y checklists.
+- No deben subirse credenciales de cPanel, WordPress, base de datos, SMTP, plugins premium ni backups con datos reales.
+- Cualquier configuración sensible debe mantenerse fuera del repositorio.
+- La web debe tener páginas mínimas de servicios, portafolio, casos de éxito anonimizados, blog inicial y formulario de contacto.
+
 ---
 
 ## 15. Reglas de seguridad y confidencialidad
@@ -693,8 +641,8 @@ SokaTechnologies debe operar con una política estricta de confidencialidad y pr
 - Portik debe minimizar exposición de datos personales en portería.
 - AutoInventario no debe recolectar ni registrar datos sensibles innecesarios.
 - AutoInventario debe eliminar secretos del repositorio antes de venta.
-- Auto Whatsapp debe exigir consentimiento, respetar opt-out y evitar campañas no solicitadas.
-- Auto Whatsapp no debe usarse para loterías, apuestas, captación de jugadores, spam o cobranzas agresivas.
+- AutoWhatsApp debe exigir consentimiento, respetar opt-out y evitar campañas no solicitadas.
+- AutoWhatsApp no debe usarse para loterías, apuestas, captación de jugadores, spam o cobranzas agresivas.
 
 ---
 
@@ -838,134 +786,150 @@ Antes de aceptar cambios de Codex:
 
 ---
 
-## 18. Próximos documentos a crear
+## 18. Estructura documental oficial
 
-Este documento debe servir como base para crear el resto de la documentación estratégica, comercial, operativa y técnica de SokaTechnologies.
+Este documento es la base de contexto general. Los detalles operativos, comerciales, técnicos y de Codex deben vivir en documentos especializados para evitar que `00_Contexto_Empresa.md` se convierta en una mezcla extensa de todos los productos y procesos.
 
-### 18.1 Documentos estratégicos
-
-| Documento | Propósito |
-|---|---|
-| `01_Vision_Mision_Posicionamiento.md` | Definir identidad estratégica y mensaje central |
-| `02_Oferta_Servicios.md` | Convertir servicios en paquetes vendibles |
-| `03_Mercado_Clientes_Ideales.md` | Definir segmentos, dolores y perfiles de cliente |
-| `04_Modelo_Negocio_Ingresos.md` | Definir precios, márgenes, recurrencia y estructura financiera |
-| `05_Roadmap_90_Dias.md` | Plan de ejecución comercial, técnica y operativa |
-
-### 18.2 Documentos comerciales
+### 18.1 Documentos base oficiales
 
 | Documento | Propósito |
 |---|---|
-| `10_Guia_Ventas_Consultivas.md` | Guion de diagnóstico y proceso comercial |
-| `11_Plantilla_Propuesta_Comercial.md` | Plantilla estándar para propuestas |
-| `12_Mensajes_Prospeccion.md` | Mensajes para WhatsApp, LinkedIn y correo |
-| `13_Casos_Exito_Anonimizados.md` | Casos de estudio sin datos sensibles |
-| `14_Objeciones_y_Respuestas.md` | Respuestas a objeciones comunes |
+| `docs/empresa/00_Contexto_Empresa.md` | Contexto estratégico, operativo y técnico base de SokaTechnologies |
+| `docs/empresa/01_Servicios.md` | Definir servicios principales, alcance, entregables y exclusiones |
+| `docs/procesos/03_Proceso_Comercial.md` | Proceso comercial, diagnóstico, propuesta, cierre y seguimiento |
+| `docs/procesos/04_Proceso_Entrega.md` | Proceso de ejecución, entrega, control de cambios y cierre de proyectos |
+| `docs/tecnico/05_Stack_Tecnico.md` | Stack recomendado, criterios de selección tecnológica y estándares base |
+| `docs/tecnico/06_Estandares_Seguridad.md` | Reglas de seguridad, privacidad, secretos, accesos y despliegue |
+| `docs/codex/10_Codex_AGENTS_Template.md` | Plantilla estándar para tareas de Codex y agentes de desarrollo |
+| `docs/marketing/Web_SokaTechnologies_WordPress.md` | Plan, estructura, contenido y checklist de la web pública en WordPress/cPanel |
 
-### 18.3 Documentos operativos
+### 18.2 Documentos de productos
 
-| Documento | Propósito |
-|---|---|
-| `20_Proceso_Onboarding_Cliente.md` | Cómo iniciar correctamente un cliente nuevo |
-| `21_Proceso_Entrega_Proyecto.md` | Flujo de entrega por hitos |
-| `22_Proceso_Soporte_Mantenimiento.md` | Gestión de soporte mensual |
-| `23_Checklist_Cierre_Proyecto.md` | Validaciones para cerrar entregables |
-| `24_Control_Cambios_Alcance.md` | Manejo de cambios fuera de alcance |
-
-### 18.4 Documentos técnicos
+Los productos deben documentarse en archivos separados para mantener este documento como contexto base.
 
 | Documento | Propósito |
 |---|---|
-| `30_Estandares_Tecnicos.md` | Reglas técnicas generales |
-| `31_Checklist_Arquitectura.md` | Evaluación inicial de arquitectura |
-| `32_Checklist_Despliegue.md` | Validaciones antes de producción |
-| `33_Seguridad_Confidencialidad.md` | Reglas de seguridad y protección de datos |
-| `34_Plantilla_README_Proyecto.md` | README estándar para proyectos |
-| `35_Guia_Uso_Codex.md` | Reglas y plantillas para trabajar con Codex |
-
-### 18.5 Documentos de productos
-
-| Documento | Propósito |
-|---|---|
-| `40_AutoInventario_Alcance_Producto.md` | Definir alcance real como inventario automático de activos Windows |
-| `41_AutoInventario_Remediacion_Tecnica.md` | Plan para estabilizar build, seguridad, secretos y despliegue |
-| `42_Portik_Pitch_Comercial_y_Demo.md` | Pitch, guion de demo y plan de validación comercial de Portik |
-| `42_Portik_Propuesta_Piloto.md` | Propuesta estándar para piloto de Portik |
-| `43_Portik_Validacion_Mercado.md` | Plan para validar Portik con clientes reales |
-| `44_AutoWhatsapp_Alcance_Uso_Aceptable.md` | Alcance, restricciones y controles de uso responsable |
-| `45_Portafolio_Productos_SokaTechnologies.md` | Resumen comparativo de productos, estado y prioridad |
+| `40_Portik_Pitch_Comercial_y_Demo.md` | Pitch, guion de demo y argumentos comerciales de Portik |
+| `41_Portik_Propuesta_Piloto.md` | Propuesta estándar para piloto de Portik |
+| `42_Portik_Validacion_Mercado.md` | Plan para validar Portik con administradores reales |
+| `43_AutoInventario_Alcance_Producto.md` | Alcance real de AutoInventario como inventario automático de activos Windows |
+| `44_AutoInventario_Remediacion_Tecnica.md` | Plan para estabilizar build, seguridad, secretos, pruebas y despliegue |
+| `45_AutoWhatsApp_Alcance_Uso_Aceptable.md` | Alcance, restricciones y controles de uso responsable de AutoWhatsApp |
+| `46_Portafolio_Productos_SokaTechnologies.md` | Resumen comparativo de productos, estado, prioridad y estrategia |
 
 ---
 
-## 19. Decisiones recomendadas
+## 19. Repositorios iniciales
+
+SokaTechnologies debe organizar su trabajo en repositorios separados según propósito.
+
+| Repositorio | Propósito |
+|---|---|
+| `sokatechnologies-docs` | Documentación estratégica, comercial, operativa y técnica de SokaTechnologies |
+| `sokatechnologies-website` | Web pública en WordPress; documentación, assets, tema hijo, snippets y checklists |
+| `sokatechnologies-starter-kit` | Base reusable para futuros proyectos de clientes |
+| `sokatechnologies-automation-templates` | Plantillas de automatización, scripts e integraciones |
+
+### 19.1 Regla específica para `sokatechnologies-website`
+
+El repositorio `sokatechnologies-website` no debe contener una instalación completa de WordPress.
+
+Debe contener:
+
+- Documentación de estructura del sitio.
+- Mapa de páginas.
+- Copy base.
+- Assets propios.
+- Tema hijo si aplica.
+- Snippets controlados.
+- Checklists de publicación.
+- Checklist de plugins.
+- Guía de backup y mantenimiento.
+- Configuraciones no sensibles.
+
+No debe contener:
+
+- Instalación completa de WordPress.
+- Credenciales de cPanel.
+- Credenciales de WordPress.
+- Backups con datos reales.
+- Archivos de base de datos.
+- Plugins premium con licencia privada.
+- Tokens, claves API, usuarios o contraseñas.
+- Información real de clientes sin anonimizar.
+
+---
+
+## 20. Decisiones recomendadas
 
 Las decisiones iniciales recomendadas para SokaTechnologies son:
 
 1. Posicionar la empresa como proveedor B2B de soluciones operativas, no como freelancer de programación.
 2. Priorizar software interno, automatizaciones, dashboards, sitios web corporativos, infraestructura y soporte recurrente.
-3. Convertir Portik en el producto principal de validación comercial inmediata.
-4. Tratar AutoInventario como producto técnico B2B de inventario de activos Windows, no como inventario comercial de mercancía.
-5. No vender AutoInventario hasta completar remediación técnica y de seguridad.
-6. Mantener Auto Whatsapp como herramienta controlada con límites de consentimiento, opt-out y cumplimiento.
-7. No usar Auto Whatsapp para loterías, apuestas, captación, spam, bases compradas o cobranzas agresivas.
-8. No depender únicamente de los dos clientes actuales.
-9. Crear ofertas empaquetadas con entregables, precio, alcance y mantenimiento.
-10. Exigir anticipo y alcance escrito para todo proyecto.
-11. Crear ingresos recurrentes mediante soporte, mantenimiento, monitoreo y mejoras continuas.
-12. Usar ChatGPT como centro estratégico y documental.
-13. Usar Codex como acelerador técnico bajo revisión y control.
+3. Construir la web pública inicial en WordPress usando cPanel.
+4. Mantener el repo `sokatechnologies-website` como repositorio de documentación, assets, tema hijo, snippets y checklists; no como instalación completa de WordPress.
+5. Convertir Portik en el producto principal de validación comercial inmediata.
+6. Tratar AutoInventario como producto técnico B2B de inventario de activos Windows, no como inventario comercial de mercancía.
+7. No vender AutoInventario hasta completar remediación técnica y de seguridad.
+8. Mantener AutoWhatsApp como herramienta controlada con límites de consentimiento, opt-out y cumplimiento.
+9. No usar AutoWhatsApp para loterías, apuestas, captación, spam, bases compradas o cobranzas agresivas.
+10. No depender únicamente de los dos clientes actuales.
+11. Crear ofertas empaquetadas con entregables, precio, alcance y mantenimiento.
+12. Exigir anticipo y alcance escrito para todo proyecto.
+13. Crear ingresos recurrentes mediante soporte, mantenimiento, monitoreo y mejoras continuas.
+14. Usar ChatGPT como centro estratégico y documental.
+15. Usar Codex como acelerador técnico bajo revisión y control.
 
 ---
 
-## 20. Tareas concretas inmediatas
+## 21. Tareas concretas inmediatas
 
 Las siguientes tareas deben ejecutarse como prioridad:
 
-- Crear documento `42_Portik_Pitch_Comercial_y_Demo.md`.
-- Crear documento `42_Portik_Propuesta_Piloto.md`.
+- Guardar este documento como `docs/empresa/00_Contexto_Empresa.md`.
+- Crear o actualizar `docs/empresa/01_Servicios.md`.
+- Crear o actualizar `docs/procesos/03_Proceso_Comercial.md`.
+- Crear o actualizar `docs/procesos/04_Proceso_Entrega.md`.
+- Crear o actualizar `docs/tecnico/05_Stack_Tecnico.md`.
+- Crear o actualizar `docs/tecnico/06_Estandares_Seguridad.md`.
+- Crear o actualizar `docs/codex/10_Codex_AGENTS_Template.md`.
+- Crear `docs/marketing/Web_SokaTechnologies_WordPress.md`.
+- Crear el repo `sokatechnologies-website` con documentación, assets, tema hijo, snippets y checklists.
+- Preparar la web pública inicial en WordPress/cPanel.
 - Preparar demo comercial de Portik con datos ficticios.
 - Crear lista inicial de administradores de condominios y conjuntos residenciales.
 - Contactar al menos 10 prospectos de Portik.
 - Agendar 3 conversaciones de diagnóstico de Portik.
 - Definir precio piloto de Portik.
-- Crear documento `40_AutoInventario_Alcance_Producto.md`.
-- Crear documento `41_AutoInventario_Remediacion_Tecnica.md`.
-- Abrir backlog crítico de AutoInventario.
-- Crear documento `44_AutoWhatsapp_Alcance_Uso_Aceptable.md`.
-- Definir política de consentimiento y opt-out para Auto Whatsapp.
-- Crear documento `02_Oferta_Servicios.md`.
-- Crear documento `05_Roadmap_90_Dias.md`.
-- Crear documento `11_Plantilla_Propuesta_Comercial.md`.
-- Crear documento `35_Guia_Uso_Codex.md`.
+- Crear backlog crítico de AutoInventario.
+- Definir política de consentimiento y opt-out para AutoWhatsApp.
 - Crear casos de éxito anonimizados de los clientes actuales.
 - Definir planes de soporte mensual.
 - Separar documentación por cliente y por producto.
 
 ---
 
-## 21. Próximo paso recomendado
+## 22. Próximo paso recomendado
 
-El próximo paso recomendado es preparar la venta piloto de Portik.
-
-Documento prioritario:
+El próximo paso recomendado es crear o actualizar:
 
 ```md
-42_Portik_Propuesta_Piloto.md
+docs/marketing/Web_SokaTechnologies_WordPress.md
 ```
 
-Este documento debe convertir el pitch de Portik en una propuesta lista para enviar a un administrador de condominio o conjunto residencial, incluyendo:
+Ese documento debe definir:
 
-- Problema identificado.
-- Objetivo del piloto.
-- Alcance incluido.
-- Exclusiones.
-- Entregables.
-- Cronograma.
-- Responsabilidades del cliente.
-- Precio.
-- Forma de pago.
-- Criterios de éxito.
-- Condiciones de soporte mensual.
-- Siguiente fase después del piloto.
+- Objetivo de la web pública.
+- Páginas iniciales.
+- Estructura de navegación.
+- Copy base de servicios.
+- Formulario de contacto.
+- Portafolio.
+- Casos de éxito anonimizados.
+- Blog inicial.
+- Plugins sugeridos.
+- Checklist de seguridad.
+- Checklist de backup.
+- Qué se guarda y qué no se guarda en `sokatechnologies-website`.
 
-La prioridad es validar Portik con clientes reales y convertirlo en el primer producto de SokaTechnologies con ingreso recurrente mensual.
+La prioridad es publicar una web simple y profesional que ayude a vender, sin convertir el sitio inicial en un proyecto técnico complejo.
