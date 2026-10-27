@@ -42,6 +42,7 @@ docs/
 - [`03_Proceso_Comercial.md`](./docs/procesos/03_Proceso_Comercial.md)
 - [`04_Proceso_Entrega.md`](./docs/procesos/04_Proceso_Entrega.md)
 - [`05_Gestion_Datos_Personales.md`](./docs/procesos/05_Gestion_Datos_Personales.md)
+- [`06_Cierre_Privacidad_Leads_Colombia.md`](./docs/procesos/06_Cierre_Privacidad_Leads_Colombia.md)
 - [`05_Stack_Tecnico.md`](./docs/tecnico/05_Stack_Tecnico.md)
 - [`06_Estandares_Seguridad.md`](./docs/tecnico/06_Estandares_Seguridad.md)
 - [`10_Codex_AGENTS_Template.md`](./docs/codex/10_Codex_AGENTS_Template.md)
