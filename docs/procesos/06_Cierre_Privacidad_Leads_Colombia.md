@@ -11,7 +11,7 @@ Este documento separa lo que debe decidir el fundador, lo que debe revisar un as
 - Procedimiento interno: [`05_Gestion_Datos_Personales.md`](./05_Gestion_Datos_Personales.md).
 - Seguridad e incidentes: [`06_Estandares_Seguridad.md`](../tecnico/06_Estandares_Seguridad.md) y [`incident-response.md`](../operations/incident-response.md).
 - Política de privacidad en la rama Astro de referencia: [`politica-privacidad.astro`](https://github.com/kpulido93/sokatechnologies-website/blob/feature/web-demo-2026-gsap/src/pages/politica-privacidad.astro). Sigue marcada como borrador.
-- Catálogo consultado en la rama técnica del PR #17: [`consentCatalog.json`](https://github.com/kpulido93/sokatechnologies-website/blob/codex/tarea-04b6b-evidencia-consentimiento/src/data/consentCatalog.json). El catálogo todavía no está en `feature/web-demo-2026-gsap`; no debe tratarse como aprobado ni activarse por esta referencia.
+- Catálogo de consentimiento ya integrado mediante el [PR #17](https://github.com/kpulido93/sokatechnologies-website/pull/17) en la rama Astro `feature/web-demo-2026-gsap`: [`consentCatalog.json`](https://github.com/kpulido93/sokatechnologies-website/blob/feature/web-demo-2026-gsap/src/data/consentCatalog.json). Commit de integración verificado: `92303bf64a25ad24da9c024fd749104ad76d92b6`. Su presencia en Git no equivale a aprobación jurídica, despliegue ni activación del modo `required`.
 
 Antes de publicar, el fundador debe conservar una copia aprobada de la política, los textos de autorización y sus hashes. Una modificación de texto exige una nueva versión, un nuevo hash y actualización coordinada del aviso mostrado por el frontend y validado por el Worker.
 
@@ -140,7 +140,7 @@ Ante un envío equivocado, exposición en un log, acceso no autorizado, credenci
 | Retención de clientes, contratos y consentimientos | Asesor jurídico + contable | Pendiente | Matriz por obligación, finalidad, controversia y acceso. |
 | Proveedores, contratos y transferencias | Fundador + asesor jurídico | Evidencia incompleta | Fichas vigentes, acuerdos, regiones, subencargados y controles. |
 | Registro privado de titulares | Fundador | Procedimiento definido, sistema pendiente | Herramienta privada, acceso restringido y calendario de vencimientos. |
-| Evidencia técnica y reconciliación | Equipo técnico; revisión jurídica del diseño | Preparada en PR #17, no activada | Aprobación del modelo, retención, revocación y modo operativo. |
+| Evidencia técnica y reconciliación | Equipo técnico; revisión jurídica del diseño | Código integrado mediante PR #17 en la rama Astro; no desplegado ni activado | Aprobación del modelo, retención, revocación y modo operativo. |
 | Auditoría con Google PageSpeed | Fundador + asesor jurídico + técnico | No pública | Inventario y proveedores aprobados antes de habilitarla. |
 | Activación de formularios | Fundador, jurídico, operativo y técnico | **NO-GO** | Aprobaciones firmes, pruebas, rollback y autorización explícita de despliegue. |
 
@@ -157,7 +157,7 @@ Ante un envío equivocado, exposición en un log, acceso no autorizado, credenci
 | OPS-01 | Registro privado de solicitudes con responsable y vencimiento. | Fundador | Registro de prueba sin datos reales y control de acceso. | Pendiente de operar |
 | OPS-02 | Revisión mensual de retención y accesos. | Fundador | Checklist y registro de cada revisión. | Pendiente de operar |
 | OPS-03 | Procedimiento de incidentes y escalamiento jurídico probado. | Fundador + técnico | Simulación, contacto de escalamiento y cierre. | Pendiente de operar |
-| TEC-01 | Evidencia generada por servidor, minimizada y vinculada por `request_id`. | Equipo técnico | Pruebas del PR #17 y documentación técnica. | Preparado; no desplegado |
+| TEC-01 | Evidencia generada por servidor, minimizada y vinculada por `request_id`. | Equipo técnico | Pruebas del PR #17 y documentación técnica. | Integrado en rama Astro; no desplegado |
 | TEC-02 | Frontend y Worker validan la misma versión; modo `off` sigue por defecto. | Equipo técnico | Prueba de coherencia y configuración revisada. | Preparado; no activado |
 | TEC-03 | No existen endpoints públicos de lectura, exportación o borrado. | Equipo técnico | Revisión de rutas y controles de acceso. | Pendiente de verificación final |
 | DEP-01 | Formularios reales solo se habilitan con autorización explícita. | Fundador | Aprobación escrita y checklist firmado. | **NO-GO** |
